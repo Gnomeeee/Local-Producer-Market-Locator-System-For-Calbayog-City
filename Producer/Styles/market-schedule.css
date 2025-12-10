@@ -1,0 +1,307 @@
+/* MARKET SCHEDULE CONTAINER */
+.market-schedule-container {
+  border: 1px solid rgb(215, 255, 215);
+  margin-bottom: 5vh;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 5px 13px -10px rgb(0, 0, 1);
+  border-radius: 15px;
+}
+
+/* MARKET SCHEDULE HEADER */
+
+.market-schedule-header {
+  display: flex;
+  background: linear-gradient(to right, #f0fdf4 0%, #fefce8 100%);
+  justify-content: space-between;
+  padding: 24px 24px 15px 24px;
+}
+
+/* MARKET SCHEDULE BUTTON */
+
+.market-btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 13px;
+  border-radius: 12px;
+  background-color: rgb(0, 141, 0);
+  color: white;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+.market-btn img {
+  filter: brightness(0) invert(1);
+  margin-right: 15px;
+  width: 18px;
+  height: 18px;
+}
+
+.market-btn:hover {
+  background-color: rgba(34, 139, 34, 0.797);
+}
+
+/* MARKET SCHEDULE HEADER H3 */
+
+.market-texts h3 {
+  color: forestgreen;
+  font-weight: lighter;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+/* MARKET SCHEDULE P */
+
+.market-texts p {
+  color: rgb(93, 93, 93);
+}
+
+/* MARKET SCHEDULE BODY */
+.market-schedule-body {
+  padding: 43px 24px;
+}
+
+.market-img-texts {
+  display: flex;
+}
+.market-schedule-card {
+  display: flex;
+  margin-bottom: 17px;
+  border: 1px solid rgb(217, 255, 217);
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px;
+  border-radius: 14px;
+  transition: all ease 0.3s;
+}
+
+.market-schedule-card:hover {
+  box-shadow: 0 6px 17px -10px rgb(0, 0, 1);
+}
+
+.market-img {
+  background-color: rgb(216, 255, 216);
+  padding: 7px 10px;
+  border-radius: 12px;
+  margin-right: 15px;
+}
+
+.market-img img {
+  margin: 5px;
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) saturate(100%) invert(29%) sepia(70%) saturate(370%)
+    hue-rotate(100deg);
+}
+
+/* MARKET SCHEDULE TEXTS */
+
+.market-schedule-texts h3 {
+  color: forestgreen;
+  font-weight: lighter;
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.market-schedule-texts p {
+  display: flex;
+  align-items: center;
+  color: gray;
+  font-size: 15px;
+}
+
+.market-schedule-texts img {
+  width: 15px;
+  height: 15px;
+  filter: invert(56%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(90%)
+    contrast(90%);
+}
+
+/* MARKET SCHEDULE BUTTON */
+
+.market-schedule-action {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn button {
+  border: 1px solid rgb(159, 255, 159);
+  padding: 8px;
+  border-radius: 10px;
+  background: rgb(237, 255, 237);
+  cursor: pointer;
+}
+
+.edit-btn button:hover {
+  background-color: rgb(159, 255, 159);
+}
+
+.edit-btn button:active {
+  border: 1px solid lightgreen;
+  background: transparent;
+}
+
+.edit-btn img {
+  position: relative;
+  top: 3px;
+  left: 5px;
+}
+
+.delete-btn button {
+  border: 1px solid rgb(255, 143, 128);
+  padding: 8px;
+  border-radius: 10px;
+  background: rgb(255, 241, 239);
+  cursor: pointer;
+}
+
+.delete-btn button:hover {
+  background-color: rgb(255, 195, 186);
+}
+
+.delete-btn img {
+  position: relative;
+  top: 3px;
+  left: 5px;
+  width: 21px;
+  height: 21px;
+  filter: brightness(0) saturate(100%) invert(28%) sepia(93%) saturate(7470%)
+    hue-rotate(0deg) brightness(90%) contrast(90%);
+}
+
+.message {
+  margin-top: 100px;
+  text-align: center;
+  display: block;
+  margin-bottom: 100px;
+}
+
+.message img {
+  filter: invert(56%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(90%)
+    contrast(90%);
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+.message h3 {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.message p {
+  color: gray;
+}
+
+/* MODAL */
+
+.modal-content {
+  justify-content: center;
+  background: #fff;
+  position: relative;
+  margin: 190px auto;
+  padding: 25px;
+  width: 450px;
+  border-radius: 12px;
+  animation: fadeDown 0.25s ease-out;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #ffffff;
+  width: 480px;
+  padding: 25px;
+  border-radius: 14px;
+  animation: fadeIn 0.25s ease;
+}
+
+.modal-content h2 {
+  color: rgb(0, 85, 0);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.modal-content p {
+  color: rgb(120, 120, 120);
+  margin-bottom: 25px;
+}
+
+.close {
+  float: right;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.close:hover {
+  border: 1px solid;
+}
+
+label {
+  margin-top: 12px;
+  display: block;
+  font-weight: 600;
+  font-size: 15px;
+  color: rgb(0, 101, 0);
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1.5px solid #a7cea7;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.cancel-btn {
+  background: transparent;
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: 1.5px solid #88ff88;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cancel-btn:hover {
+  background-color: rgb(255, 229, 162);
+}
+
+.submit-btn {
+  background: rgb(3, 140, 3);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background-color: rgba(34, 139, 34, 0.836);
+}
+.submit-btn:active {
+  border: 1px solid lightgreen;
+  color: forestgreen;
+  background-color: transparent;
+  font-weight: bold;
+}

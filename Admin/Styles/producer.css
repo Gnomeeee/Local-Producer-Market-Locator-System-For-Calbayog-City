@@ -1,0 +1,139 @@
+.page-container {
+  margin: 0 auto;
+  width: 98%;
+  border-radius: 14px;
+  background: white;
+  overflow: hidden;
+  border: 1px solid rgb(228, 255, 228);
+  box-shadow: 0 8px 10px -13px rgb(0, 0, 1);
+}
+
+.page-header {
+  background: linear-gradient(to right, #f0fdf4 0%, #fefce8 100%);
+  padding: 24px 24px 1px 24px;
+  margin-bottom: 25px;
+}
+
+.page-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: forestgreen;
+  font-weight: lighter;
+}
+
+.page-subtitle {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.page-body {
+  padding: 0px 15px;
+}
+
+table {
+  overflow: hidden;
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+th {
+  text-align: left;
+  font-size: 14px;
+  color: rgb(0, 80, 0);
+  padding: 20px 20px 10px 20px;
+}
+
+td {
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  color: rgb(59, 59, 59);
+}
+
+td:nth-child(1) {
+  color: forestgreen;
+}
+
+.pending-status {
+  background: #fef3c7;
+  color: #b45309;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 13px;
+  border: 1px solid #ffdcc1;
+}
+
+.cancelled-status {
+  background: #ffd4bf;
+  color: rgb(214, 49, 49);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.verified-status {
+  background: rgb(211, 255, 211);
+  color: forestgreen;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 13px;
+  border: #004f1d;
+}
+
+.btn-approve {
+  display: flex;
+  align-items: center;
+  background: #f3fff5;
+  color: #15803d;
+  padding: 8px 18px;
+  border-radius: 12px;
+  border: 1px solid #16a34a;
+  cursor: pointer;
+  font-size: 14px;
+  gap: 5px;
+}
+
+.btn-approve:hover {
+  background-color: rgb(196, 255, 196);
+}
+
+.btn-approve img {
+  width: 17px;
+  height: 17px;
+  filter: invert(42%) sepia(83%) saturate(507%) hue-rotate(100deg)
+    brightness(95%) contrast(50%);
+}
+
+.btn-reject {
+  display: flex;
+  align-items: center;
+  background: #fde7e7;
+  color: #b91c1c;
+  padding: 8px 18px;
+  border-radius: 12px;
+  border: 1px solid #dc2626;
+  cursor: pointer;
+  font-size: 14px;
+  gap: 5px;
+}
+
+.btn-reject:hover {
+  background-color: rgb(255, 202, 210);
+}
+
+.btn-reject img {
+  width: 18px;
+  height: 18px;
+  filter: invert(21%) sepia(100%) saturate(7484%) hue-rotate(357deg)
+    brightness(100%) contrast(50%);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}

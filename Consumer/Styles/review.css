@@ -1,0 +1,91 @@
+/* FOR CONTAINER */
+.my-reviews-container {
+  border-radius: 15px;
+  border: 1px solid rgb(227, 255, 227);
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 5px 13px -10px rgb(0, 0, 1);
+}
+
+/* FOR HEADER */
+.rev-header {
+  padding: 25px 25px 10px 25px;
+  background: linear-gradient(to right, #f0fdf4 0%, #fefce8 100%);
+}
+
+.rev-header h2 {
+  font-size: 22px;
+  font-weight: lighter;
+  color: rgb(2, 82, 2);
+  margin-bottom: 10px;
+}
+
+.rev-header p {
+  color: rgb(84, 84, 84);
+}
+
+/* ------------ */
+
+/* FOR BODY */
+.con-body {
+  display: grid;
+  gap: 17px;
+  padding: 35px 24px 24px 24px;
+}
+
+.rev {
+  border: 1px solid rgb(212, 255, 212);
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 1px 7px 11px -14px rgb(0, 0, 1);
+  background: rgb(241, 255, 241);
+  overflow: hidden;
+}
+
+.farm-id-rate {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.farm-id-rate p {
+  color: rgb(0, 69, 0);
+}
+
+.rev-rating {
+  color: gold;
+}
+
+.rev-comment {
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  line-height: 1.5;
+}
+
+.rev-date {
+  display: flex;
+  justify-content: end;
+}
+
+.message {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.message p {
+  margin-bottom: 15px;
+  color: rgb(125, 125, 125);
+}
+.message img {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  filter: invert(56%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(90%)
+    contrast(90%);
+}
+
+/* ---------- */

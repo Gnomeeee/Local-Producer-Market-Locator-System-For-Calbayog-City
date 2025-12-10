@@ -1,0 +1,131 @@
+.fav-container {
+  background-color: white;
+  border: 1px solid rgb(235, 255, 235);
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 1px 10px -5px rgb(0, 0, 1);
+}
+
+.fav-header {
+  background: linear-gradient(to right, #f0fdf4 0%, #fefce8 100%);
+  padding: 24px 24px 10px 24px;
+}
+
+.fav-header img {
+  width: 18px;
+  height: 18px;
+}
+
+.fav-header p {
+  color: rgb(79, 79, 79);
+}
+
+.fav-svg {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.fav-svg h2 {
+  color: rgb(0, 84, 0);
+  font-weight: lighter;
+  font-size: 17px;
+}
+
+.fav-card {
+  display: grid;
+  padding: 48px 24px 24px 24px;
+  gap: 1em;
+}
+
+.fav-content {
+  border: 1px solid rgb(235, 255, 235);
+  box-shadow: 0 1px 9px -5px rgb(0, 0, 1);
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.name-address-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.farm-address {
+  display: flex;
+  align-items: center;
+}
+
+.farm-address img {
+  width: 15px;
+  height: 15px;
+  filter: invert(56%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(90%)
+    contrast(90%);
+}
+
+.farm-name-address h3 {
+  color: rgb(0, 94, 0);
+  font-weight: lighter;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.farm-name-address p {
+  color: rgb(105, 105, 105);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.button-heart {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.button-heart button {
+  padding: 11px;
+  border: none;
+  background: forestgreen;
+  color: white;
+  border-radius: 15px;
+  font-weight: bold;
+  width: max-content;
+  cursor: pointer;
+}
+
+.button-heart button:hover {
+  background-color: rgba(34, 139, 34, 0.858);
+}
+
+.fav-message {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fav-message h3 {
+  margin-bottom: 13px;
+  color: gray;
+}
+
+.fav-message p {
+  color: gray;
+}
+
+.fav-message img {
+  width: 60px;
+  height: 60px;
+  filter: invert(70%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(90%)
+    contrast(90%);
+  margin-bottom: 12px;
+}
+
+.img-div:hover {
+  border-radius: 5px;
+  background-color: rgb(255, 234, 190);
+  cursor: pointer;
+}
+
+.img-div img {
+  top: 4px;
+  margin-top: 5px;
+  margin: 5px;
+}

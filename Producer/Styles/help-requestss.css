@@ -1,0 +1,266 @@
+.top-content {
+  display: flex;
+  border: 1px solid rgb(220, 255, 220);
+  background: linear-gradient(to right, #f0fdf4 0%, #fefce8 100%);
+  padding: 24px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  justify-content: space-between;
+  box-shadow: 0 3px 13px -10px rgb(0, 0, 1);
+}
+
+.top-texts h3 {
+  color: rgb(0, 80, 0);
+  font-size: 17px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+.top-texts p {
+  color: rgb(81, 81, 81);
+}
+
+.top-button button {
+  border: none;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 11px;
+  color: white;
+  background-color: forestgreen;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.top-button img {
+  filter: brightness(0) invert(1);
+  margin-right: 10px;
+}
+
+.top-button button:hover {
+  background-color: rgba(34, 139, 34, 0.826);
+}
+
+.help-request-box {
+  border: 1px solid rgb(220, 255, 220);
+  box-shadow: 0 5px 13px -10px rgb(0, 0, 1);
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.help-request-header {
+  background: linear-gradient(to right, #f0fdf4 0%, #fefce8 100%);
+  padding: 24px 24px 10px 24px;
+}
+
+.help-request-header h3 {
+  color: rgb(0, 80, 0);
+  font-size: 17px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+.help-request-header p {
+  color: rgb(81, 81, 81);
+}
+
+.help-request-body {
+  padding: 45px 24px 45px 24px;
+  display: grid;
+  gap: 15px;
+}
+
+.request-content {
+  border-radius: 14px;
+  padding: 17px;
+  border: 1px solid rgb(209, 255, 209);
+  background-color: rgb(243, 255, 243);
+}
+
+.title-status {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.title-status h3 {
+  color: rgb(0, 60, 0);
+  font-size: 17px;
+  font-weight: lighter;
+}
+
+.request-content p:nth-child(2) {
+  margin-bottom: 10px;
+  color: rgb(41, 41, 41);
+}
+
+.request-content p:nth-child(1) {
+  color: rgb(104, 104, 104);
+  font-size: 14px;
+}
+
+.admin-response {
+  background: #d8ffe3; /* soft green */
+  border-left: 4px solid #4caf50;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.admin-response h3 {
+  font-size: 14px;
+  color: rgb(0, 96, 0);
+  font-weight: lighter;
+  margin-bottom: 7px;
+}
+
+.admin-response p:nth-child(2) {
+  color: #3f3f3f;
+  font-size: 14px;
+}
+
+.admin-response p:nth-child(3) {
+  color: #8e8e8e;
+  font-size: 13px;
+}
+
+.message {
+  text-align: center;
+}
+
+.message img {
+  filter: invert(56%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(90%)
+    contrast(90%);
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+.message h3 {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.message p {
+  color: gray;
+}
+
+/* Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(2px);
+  display: none;
+  z-index: 900;
+}
+
+/* Modal Box */
+.modal {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 480px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 25px 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  display: none;
+  z-index: 1000;
+}
+
+.modal label {
+  color: rgb(0, 85, 0);
+}
+/* Header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h2 {
+  color: rgb(0, 85, 0);
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.close-btn {
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Description text */
+.modal-desc {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #4d4d4d;
+}
+
+/* Inputs */
+.input-field,
+.textarea-field {
+  width: 100%;
+  border: 2px solid #e3ffe9;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 15px;
+  margin-top: 12px;
+  margin-bottom: 18px;
+  outline: none;
+}
+
+.textarea-field {
+  min-height: 100px;
+}
+
+/* Buttons */
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.cancel-btn {
+  background: white;
+  color: #292929;
+  border: 1px solid lightgreen;
+  padding: 9px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cancel-btn:hover {
+  background-color: #ffe9a7;
+}
+
+.send-btn {
+  display: flex;
+  align-items: center;
+  background: #2f9e44;
+  color: white;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.send-btn:hover {
+  background-color: rgba(6, 100, 6, 0.785);
+}
+
+.send-btn img {
+  filter: brightness(0) invert(1);
+}

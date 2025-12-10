@@ -1,0 +1,322 @@
+.admin-container {
+  background: white;
+  overflow: hidden;
+  border: 1px solid rgb(210, 255, 210);
+  border-radius: 15px;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #f3ffe9, #fffce6);
+  padding: 24px 24px 10px 24px;
+  margin-bottom: 30px;
+}
+
+.admin-header h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: forestgreen;
+  font-weight: lighter;
+}
+
+.admin-header p {
+  color: #818181;
+  font-size: 15px;
+}
+
+.add-admin-btn {
+  display: flex;
+  align-items: center;
+  padding: 12px 22px;
+  background: rgb(21, 135, 21);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 3px 8px rgba(30, 164, 77, 0.25);
+}
+
+.add-admin-btn img {
+  filter: brightness(0) invert(1);
+}
+
+.add-admin-btn:hover {
+  background-color: rgba(34, 139, 34, 0.808);
+  transform: translateY(-2px);
+}
+.admin-table-wrapper {
+  border-radius: 18px;
+  padding: 0;
+  overflow: hidden;
+  padding: 24px;
+}
+
+/* ============ TABLE ============ */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+.admin-table th {
+  text-align: left;
+  font-weight: 600;
+  padding: 15px 22px;
+  color: rgb(0, 120, 0);
+  font-size: 14px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.admin-table th:nth-child(5) {
+  text-align: right;
+}
+
+.admin-table thead:hover {
+  background: #f9fdfb;
+}
+
+.admin-table td {
+  padding: 15px 22px;
+  font-size: 14px;
+  color: #626262;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.admin-table td:nth-child(5) {
+  text-align: right;
+}
+
+.admin-table td:nth-child(1) {
+  color: rgb(0, 99, 0);
+}
+
+.admin-table tr:hover td {
+  background: #f9fdfb;
+}
+
+/* ============ DELETE BUTTON ============ */
+.delete-btn {
+  display: flex;
+  align-items: center;
+  background: #ffe5e5;
+  border: none;
+  padding: 7px 16px;
+  font-size: 14px;
+  color: #d42b2b;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  float: inline-end;
+}
+
+.delete-btn img {
+  filter: invert(21%) sepia(100%) saturate(7484%) hue-rotate(357deg)
+    brightness(100%) contrast(70%);
+}
+
+.delete-btn:hover {
+  background: #ffcccc;
+}
+
+.default-admin-btn {
+  background: #efe8ff;
+  color: #6b41d9;
+  border: none;
+  padding: 7px 18px;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: default;
+  font-weight: 500;
+}
+
+.default-box {
+  margin-top: 30px;
+  padding: 28px;
+  background: #e6edff;
+  border-radius: 15px;
+  box-shadow: inset 0 0 20px rgba(107, 65, 217, 0.05);
+}
+
+.credentials {
+  display: flex;
+}
+
+.default-box h3 {
+  font-size: 15px;
+  color: #1f2937;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: lighter;
+}
+
+.default-box p {
+  font-size: 15px;
+  margin: 6px 0;
+  color: #374151;
+}
+
+.default-box strong {
+  color: #1d1d1d;
+  margin-left: 5px;
+}
+.admin,
+.email {
+  display: flex;
+}
+
+.default-box .note {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+  .admin-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .add-admin-btn {
+    width: 100%;
+  }
+
+  .admin-table th,
+  .admin-table td {
+    padding: 12px 14px;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-box {
+  background: #ffffff;
+  padding: 30px;
+  width: 520px;
+  border-radius: 16px;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.25);
+  position: relative;
+  animation: popIn 0.25s ease-out;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.92);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.2s;
+}
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-box h2 {
+  margin: 0 0 5px;
+  font-size: 20px;
+  color: rgb(0, 95, 0);
+  font-weight: lighter;
+}
+
+.subtitle {
+  color: #6e8f79;
+  margin-bottom: 20px;
+}
+
+/* ─────────── Form Labels ─────────── */
+.modal-box label {
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 12px;
+  color: #355f3f;
+  font-weight: 600;
+}
+
+/* ─────────── Inputs ─────────── */
+.modal-box input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid #d8f1e0;
+  font-size: 15px;
+  transition: 0.2s;
+}
+.modal-box input:focus {
+  outline: none;
+  border-color: #5ca87f;
+  background: #f3fff7;
+  box-shadow: 0 0 0 3px rgba(118, 190, 146, 0.3);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.cancel-btn {
+  padding: 10px 18px;
+  border-radius: 12px;
+  border: 1px solid rgb(178, 255, 178);
+  background: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 600;
+}
+.cancel-btn:hover {
+  background: #eeeeee;
+}
+
+.create-btn {
+  padding: 10px 18px;
+  border-radius: 12px;
+  border: none;
+  background: rgb(21, 125, 21);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.2s;
+  font-weight: 600;
+}
+
+.create-btn img {
+  filter: brightness(0) invert(1);
+}
+.create-btn:hover {
+  background: rgba(34, 139, 34, 0.83);
+}

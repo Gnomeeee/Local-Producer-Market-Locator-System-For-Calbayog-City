@@ -1,0 +1,96 @@
+/* FOR CONTAINER */
+.producer-review-container {
+  border-radius: 15px;
+  border: 1px solid rgb(227, 255, 227);
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 5px 13px -10px rgb(0, 0, 1);
+}
+
+/* FOR HEADER */
+.producer-review-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 25px 10px 25px;
+  background: linear-gradient(to right, #f0fdf4 0%, #fefce8 100%);
+}
+
+.producer-ratings span {
+  color: rgb(0, 88, 0);
+  border: 1px solid gold;
+  padding: 10px 20px;
+  font-size: 17px;
+  border-radius: 12px;
+}
+
+.producer-review-header h3 {
+  font-size: 22px;
+  font-weight: lighter;
+  color: rgb(2, 82, 2);
+  margin-bottom: 10px;
+}
+
+.producer-review-header p {
+  color: rgb(84, 84, 84);
+}
+
+/* ------------ */
+
+/* FOR BODY */
+.producer-review-body {
+  display: grid;
+  gap: 17px;
+  padding: 48px 24px 24px 24px;
+  margin-bottom: 5vh;
+}
+
+.review-card {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(212, 255, 212);
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 1px 7px 11px -14px rgb(0, 0, 1);
+  background: rgb(241, 255, 241);
+  overflow: hidden;
+}
+
+.user-rev h4 {
+  color: rgb(0, 87, 0);
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.user-rev p {
+  color: rgb(52, 52, 52);
+  margin-bottom: 15px;
+}
+
+.rev-date p {
+  color: rgb(128, 128, 128);
+}
+
+.message {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.message h3 {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.message p {
+  color: rgb(125, 125, 125);
+}
+.message img {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  filter: invert(56%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(90%)
+    contrast(90%);
+}
+
+/* ---------- */

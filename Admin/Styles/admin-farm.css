@@ -1,0 +1,100 @@
+.verified-farms-container {
+  background: white;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.vf-header {
+  background: linear-gradient(90deg, #f3ffe9, #fffce6);
+  padding: 24px 24px 10px 24px;
+  border-radius: 15px 15px 0 0;
+}
+
+.vf-header h2 {
+  font-size: 19px;
+  color: rgb(0, 87, 0);
+  margin-bottom: 5px;
+  font-weight: lighter;
+}
+
+.vf-header p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.vf-table-wrapper {
+  overflow-x: auto;
+  padding: 34px 10px;
+}
+
+.vf-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vf-table thead {
+  background: #fff;
+}
+.vf-table thead:hover {
+  background-color: rgb(228, 255, 228);
+}
+
+.vf-table th {
+  text-align: left;
+  padding: 18px;
+  font-weight: 600;
+  color: rgb(0, 93, 0);
+  font-size: 0.92rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.vf-table th:nth-child(5) {
+  text-align: right;
+}
+
+.vf-table td {
+  padding: 18px;
+  font-size: 0.95rem;
+  color: #333;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.vf-table td:nth-child(1) {
+  color: rgb(0, 95, 0);
+}
+.vf-table td:nth-child(4) {
+  color: rgb(0, 95, 0);
+}
+.vf-table td:nth-child(5) {
+  color: rgb(0, 95, 0);
+  text-align: right;
+}
+
+.location-icon {
+  margin-right: 5px;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-pill img {
+  filter: invert(42%) sepia(83%) saturate(507%) hue-rotate(100deg)
+    brightness(95%) contrast(50%);
+}
+
+.status-pill.active {
+  background: #e8ffe9;
+  color: #2d8a34;
+}
+
+.status-pill img {
+  width: 16px;
+}

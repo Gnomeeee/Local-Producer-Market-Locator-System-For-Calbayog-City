@@ -1,0 +1,192 @@
+/* TOP CARDS GRID */
+.top-cards-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.stat-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e7e7e7;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+  transition: all ease 0.3s;
+}
+
+.stat-card:hover {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.stat-card h2 {
+  margin-top: 10px;
+  font-size: 17px;
+  color: #333;
+  font-weight: 600;
+}
+
+.stat-card .value {
+  font-size: 28px;
+  font-weight: lighter;
+  margin: 5px 0;
+  color: rgb(0, 130, 0);
+  margin-bottom: 10px;
+}
+
+.stat-card span {
+  font-size: 14px;
+  color: #3c3c3c;
+}
+
+/* ICON CIRCLE */
+.icon-circle {
+  border-radius: 50%;
+  background: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.icon-circle h2 {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  color: forestgreen;
+  margin-top: -1px;
+}
+
+.icon-circle img {
+  width: 21px;
+  height: 21px;
+  filter: invert(44%) sepia(87%) saturate(521%) hue-rotate(80deg)
+    brightness(95%) contrast(92%);
+}
+
+/* LOWER GRID */
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* PENDING ACTIONS BOX */
+.pending-box {
+  background: #fffefb;
+  border: 1px solid #ffeba8;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.title img {
+  filter: invert(40%) sepia(83%) saturate(507%) hue-rotate(6deg) brightness(95%)
+    contrast(50%);
+}
+
+.title h3 {
+  font-size: 17px;
+  font-weight: lighter;
+  color: #886b00;
+}
+
+/* ITEMS */
+.pending-item,
+.activity-item {
+  background: rgb(255, 255, 255);
+  border: 1px solid #ffe064;
+  padding: 18px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color: #886b00;
+  font-weight: lighter;
+}
+
+.pending-item p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: rgb(89, 89, 89);
+}
+
+/* Badges */
+.badge {
+  border: 1px solid #ffe064;
+  padding: 7px;
+  width: 30px;
+  text-align: center;
+  height: max-content;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: lighter;
+  background-color: #fff8e8;
+}
+
+/* Platform Activity Box */
+.activity-box {
+  background: #f0fff3;
+  border: 1px solid #b1ffc2;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.act-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.act-title img {
+  width: 24px;
+  height: 24px;
+  filter: invert(42%) sepia(83%) saturate(507%) hue-rotate(100deg)
+    brightness(95%) contrast(50%);
+  margin-top: -20px;
+}
+
+.activity-box h3 {
+  color: forestgreen;
+  margin-bottom: 18px;
+  font-weight: lighter;
+  font-size: 17px;
+}
+
+.activity {
+  background: white;
+  border: 1px solid lightgreen;
+  padding: 18px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color: forestgreen;
+  font-weight: lighter;
+}
+
+.activity p {
+  margin-top: 7px;
+  color: #717171;
+  font-size: 14px;
+}
+
+.activity span {
+  font-size: 20px;
+}
+
+.health-icon {
+  font-size: 28px;
+  color: #1e8e42;
+  font-weight: bold;
+}

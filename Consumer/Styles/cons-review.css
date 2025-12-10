@@ -1,0 +1,130 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  z-index: 9999;
+}
+
+#writeReviewModal:target {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transition: opacity 0.4s ease;
+}
+
+.modal {
+  background: #fff;
+  width: 90%;
+  max-width: 520px;
+  border-radius: 12px;
+  padding: 22px 22px 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.4s ease;
+}
+
+#writeReviewModal:target .modal {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 26px;
+  text-decoration: none;
+  color: #444;
+  line-height: 1;
+}
+.modal-close:hover {
+  color: #111;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+select#ratingSelect,
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font: inherit;
+  background: #fff;
+}
+select#ratingSelect:focus,
+textarea:focus {
+  outline: none;
+  border-color: #40916c;
+  box-shadow: 0 0 0 3px rgba(64, 145, 108, 0.15);
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 2px;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-primary {
+  background: rgb(10, 98, 10);
+  color: #fff;
+}
+.btn-primary:hover {
+  background: rgb(2, 62, 2);
+}
+.btn-secondary {
+  font-size: 13px;
+  background: #e9ecef;
+  color: #333;
+  border-color: #dfe3e6;
+}
+.btn-secondary:hover {
+  background: #d7dbde;
+}
+
+.btn-primary.loading {
+  pointer-events: none;
+  opacity: 0.95;
+}
+.btn-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.form-status {
+  margin-top: 10px;
+  font-size: 0.95rem;
+}

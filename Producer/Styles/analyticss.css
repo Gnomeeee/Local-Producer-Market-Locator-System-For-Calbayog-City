@@ -1,0 +1,130 @@
+/* ACCOUNT DETAILS */
+.analytics-container {
+  border-radius: 15px;
+}
+
+.analytics-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  margin-bottom: 25px;
+}
+
+.producer-func {
+  border: 1px solid rgb(228, 255, 228);
+  border-radius: 15px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 3px 10px -10px rgb(0, 0, 1);
+  background: white;
+  padding: 24px;
+}
+
+.producer-func h3 {
+  font-size: 17px;
+  font-weight: lighter;
+  color: rgb(0, 78, 0);
+}
+.producer-func p {
+  color: forestgreen;
+  font-size: 30px;
+}
+.title {
+  display: flex;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.title img {
+  width: 18px;
+  height: 18px;
+}
+
+.member-since-content p {
+  font-size: 22px;
+}
+
+/* ACCOUNT SETTINGS */
+
+.analytics-settings {
+  background: white;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.analytics-header {
+  background: linear-gradient(to right, #f0fdf4 0%, #fefce8 100%);
+  padding: 24px 24px 10px 24px;
+}
+
+.analytics-header h3 {
+  color: rgb(8, 83, 8);
+  font-weight: lighter;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.analytics-header p {
+  color: rgb(75, 75, 75);
+  font-size: 17px;
+}
+
+.analytics-body {
+  padding: 48px 24px 24px 24px;
+}
+
+.analytics-information {
+  border: 1px solid rgb(219, 255, 219);
+  margin-bottom: 22px;
+  border-radius: 15px;
+  padding: 24px;
+}
+
+.verification-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.verification-information h3 {
+  color: rgb(97, 97, 97);
+  font-size: 14px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+.help-requests {
+  border: 1px solid rgb(219, 255, 219);
+  padding: 24px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.help-request-information h3 {
+  color: rgb(97, 97, 97);
+  font-size: 14px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+.help-request-information p {
+  color: rgb(0, 70, 0);
+}
+
+.member-since {
+  border: 1px solid rgb(219, 255, 219);
+  padding: 24px;
+  border-radius: 15px;
+}
+
+.member-since-information h3 {
+  color: rgb(97, 97, 97);
+  font-size: 14px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+.member-since-information p {
+  font-size: 15px;
+  color: rgb(0, 84, 0);
+}

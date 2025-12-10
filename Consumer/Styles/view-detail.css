@@ -1,0 +1,397 @@
+.card {
+  padding: 12px;
+  background-color: #fafdf9;
+}
+
+.card h2 {
+  color: rgb(0, 82, 0);
+  margin-bottom: 15px;
+}
+
+.loc {
+  display: flex;
+  align-self: center;
+  font-size: 17px;
+  color: rgb(70, 70, 70);
+}
+
+.loc img {
+  position: relative;
+  margin-top: 1px;
+  height: 17px;
+  width: 17px;
+  filter: brightness(0) saturate(100%) invert(30%) sepia(100%) saturate(370%)
+    hue-rotate(100deg);
+  margin-bottom: 35px;
+}
+
+.about-farm-container {
+  background-color: #eeffe9;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 35px;
+}
+
+.about-farm-container p {
+  color: rgb(58, 58, 58);
+  margin-bottom: 15px;
+}
+
+.about-farm {
+  display: inline-flex;
+  margin-bottom: 15px;
+}
+
+.about-farm h3 {
+  font-size: 16px;
+  font-weight: lighter;
+  color: rgb(0, 82, 0);
+}
+
+.about-farm img {
+  height: 22px;
+  width: 22px;
+  filter: brightness(0) saturate(100%) invert(18%) sepia(100%) saturate(370%)
+    hue-rotate(100deg);
+}
+
+.owner {
+  display: inline-flex;
+  margin-bottom: 15px;
+}
+
+.card span {
+  display: flex;
+  font-weight: lighter;
+  font-size: 15px;
+  color: rgb(58, 58, 58);
+}
+
+.card strong {
+  font-size: 15px;
+  margin-left: 5px;
+  color: rgb(71, 71, 71);
+}
+
+.owner img {
+  filter: brightness(0) saturate(100%) invert(25%) sepia(100%) saturate(370%)
+    hue-rotate(100deg);
+}
+
+.contact {
+  display: flex;
+  color: rgb(2, 81, 2);
+}
+
+.contact img {
+  filter: brightness(0) saturate(100%) invert(28%) sepia(100%) saturate(370%)
+    hue-rotate(100deg);
+}
+
+.contact p {
+  margin-right: 5px;
+}
+
+.inquiries {
+  border: 1px solid rgb(202, 255, 202);
+  padding: 12px 12px 0 12px;
+  background-color: white;
+  border-radius: 14px;
+}
+
+.inquiries label {
+  font-size: 14px;
+}
+
+.phone {
+  display: flex;
+  margin-top: 15px;
+}
+
+.phone p {
+  color: forestgreen;
+}
+
+.phone img {
+  filter: brightness(0) saturate(100%) invert(23%) sepia(100%) saturate(370%)
+    hue-rotate(100deg);
+}
+
+/* FOR PRODUCTS */
+.available-products {
+  display: inline-flex;
+  margin-bottom: 15px;
+}
+
+.available-products img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) saturate(100%) invert(23%) sepia(100%) saturate(370%)
+    hue-rotate(100deg);
+}
+
+.available-products h3 {
+  font-weight: lighter;
+  font-size: 16px;
+  color: rgb(23, 99, 23);
+}
+
+.product-box h3 {
+  font-size: 17px;
+  color: rgb(23, 99, 23);
+  font-weight: lighter;
+  margin-bottom: 7px;
+}
+
+.cat {
+  padding: 6px;
+  border-radius: 25px;
+  width: max-content;
+  background-color: rgb(237, 255, 237);
+  color: rgb(18, 82, 18);
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+.product-card {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5em;
+  margin-bottom: 30px;
+}
+
+.product-box {
+  margin: 0 auto;
+  width: 45%;
+  padding: 20px;
+  background: #fff;
+  border: 1.5px solid #d6f5d6;
+  border-radius: 20px;
+  text-align: left;
+  transition: 0.2s ease;
+}
+
+.product-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.product-box h3 {
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.cat p {
+  color: #4a6f4a;
+  padding: 0 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.product-box p {
+  text-align: center;
+  margin: 4px 0;
+  color: #444;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.product-box p:nth-of-type(2) {
+  color: #2e9e43;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* FOR MARKET SCHEDULE */
+.schedule {
+  display: inline-flex;
+  color: #085917;
+  margin-bottom: 25px;
+}
+
+.schedule img {
+  filter: brightness(0) saturate(100%) invert(23%) sepia(100%) saturate(370%)
+    hue-rotate(100deg);
+}
+
+.sched {
+  border: 1px solid rgb(225, 255, 225);
+  border-radius: 15px;
+  border-left: 5px solid green;
+  background-color: #efffef;
+  height: 10vh;
+  margin-bottom: 30px;
+}
+
+.time {
+  display: flex;
+  padding: 15px;
+  color: #085917;
+}
+
+.time img {
+  margin-right: 10px;
+  filter: brightness(0) saturate(100%) invert(23%) sepia(100%) saturate(370%)
+    hue-rotate(100deg);
+}
+
+.locat {
+  display: flex;
+  margin-left: 17px;
+  color: rgb(62, 62, 62);
+}
+
+.locat img {
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+}
+
+/* FOR REVIEWS */
+.reviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.ambot {
+  display: inline-flex;
+  color: #085917;
+}
+
+.ambot img {
+  width: 21px;
+  height: 21px;
+  filter: brightness(0) saturate(100%) invert(23%) sepia(100%) saturate(370%)
+    hue-rotate(100deg);
+}
+
+.con-review {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+  width: 100%; /* fill parent container */
+}
+
+.rev-box {
+  max-width: 600px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 12px;
+  overflow-wrap: anywhere; /* extra safety */
+}
+
+.user-rev {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rev-username {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.rev-rating {
+  font-size: 18px;
+  color: #ffb400;
+}
+
+.rev-comment {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  line-height: 1.5;
+}
+
+.rev-date {
+  font-size: 13px;
+  color: #777;
+  text-align: right;
+}
+
+/* Fade-in animation for new reviews */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.user-rev p {
+  margin-bottom: 15px;
+  color: rgb(1, 78, 1);
+}
+
+.con-review p:nth-child(2) {
+  margin-bottom: 15px;
+}
+
+/* ELSE MESSAGE */
+.message {
+  display: flex;
+  width: 100%;
+  height: 13vh;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 15px;
+  background-color: oklch(0.985 0.002 247.839);
+  margin-bottom: 15px;
+  color: rgb(83, 83, 83);
+}
+
+.rev-message {
+  text-align: center;
+  background-color: oklch(0.985 0.002 247.839);
+  width: 100%;
+  height: 13vh;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.rev-message p {
+  color: gray;
+  margin-top: 10px;
+}
+
+.rev-message img {
+  width: 30px;
+  height: 30px;
+  filter: invert(56%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(90%)
+    contrast(90%);
+}
+
+/* Write Review Button (lives on main page) */
+.write-review-btn {
+  background-color: #1a751d; /* green */
+  color: white;
+  padding: 8px 17px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.write-review-btn:hover {
+  background-color: #45a447;
+  transform: translateY(-2px);
+}
+
+.write-review-btn:active {
+  transform: scale(0.97);
+}

@@ -1,0 +1,203 @@
+.user-header {
+  background: linear-gradient(90deg, #f3ffe9, #fffce6);
+  padding: 24px 24px 10px 24px;
+}
+
+.user-header h2 {
+  margin-bottom: 5px;
+  color: rgb(0, 89, 0);
+  font-weight: lighter;
+  font-size: 19px;
+}
+
+.user-header p {
+  color: rgb(94, 94, 94);
+}
+
+.pill {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.role-admin {
+  background: #f3e8ff;
+  color: #7c3aed;
+}
+
+.role-producer {
+  background: #e0eaff;
+  color: #2563eb;
+}
+
+.role-consumer {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.status-active {
+  background: #e7fde7;
+  color: #27a327;
+}
+
+.status-inactive {
+  background: #ffe2e2;
+  color: #d11a1a;
+}
+
+.you-pill {
+  background: #e0ecff;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #1d4ed8;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  background: #ffe8e8;
+  color: #d62828;
+  padding: 6px 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  left: 120px;
+}
+
+.action-btn:hover {
+  background: #ffd1d1;
+}
+
+.action-btn img {
+  width: 17px;
+  height: 17px;
+  filter: invert(21%) sepia(100%) saturate(7484%) hue-rotate(357deg)
+    brightness(100%) contrast(50%);
+}
+
+.user-management-container {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin: 20px;
+}
+
+.subtitle {
+  color: #7a7a7a;
+  margin-bottom: 20px;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-body {
+  padding: 24px;
+}
+
+.user-table th {
+  text-align: left;
+  padding: 15px 10px;
+  color: rgb(0, 99, 0);
+  font-size: 15px;
+  border-bottom: 2px solid #efefef;
+}
+
+thead:hover {
+  background-color: rgb(211, 255, 211);
+}
+
+.user-table th:nth-child(6) {
+  text-align: right;
+}
+
+.user-table td {
+  padding: 18px 10px;
+  border-bottom: 1px solid #f1f1f1;
+  font-size: 15px;
+}
+
+.user-table td:nth-child(1) {
+  color: rgb(0, 84, 0);
+}
+
+.user-table td:nth-child(2) {
+  color: rgb(109, 109, 109);
+}
+
+.user-table td:nth-child(5) {
+  color: rgb(83, 83, 83);
+}
+
+/* Role Badges */
+.badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.role-admin {
+  background: #f5e1ff;
+  color: #9b59b6;
+}
+
+.role-producer {
+  background: #dceeff;
+  color: #3498db;
+}
+
+.role-consumer {
+  background: #d8f7d8;
+  color: #2ecc71;
+}
+
+/* Status badges */
+.status-active {
+  background: #dbffd6;
+  color: #27ae60;
+}
+
+.status-inactive {
+  background: #ffe1e1;
+  color: #e74c3c;
+}
+
+/* Buttons */
+.deactivate-btn,
+.activate-btn {
+  color: #e74c3c;
+  border: 1px solid #ffb8b8;
+  background: #ffeaea;
+  padding: 6px 14px;
+  border-radius: 10px;
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.activate-btn {
+  color: #27ae60;
+  border: 1px solid #b7ffb8;
+  background: #e8ffe8;
+}
+
+.deactivate-btn:hover,
+.activate-btn:hover {
+  transform: scale(1.05);
+}
+
+/* YOU badge */
+.you-badge {
+  background: #dceeff;
+  color: #2878c5;
+  padding: 6px 12px;
+  border-radius: 10px;
+}

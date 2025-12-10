@@ -1,0 +1,335 @@
+/* ACCOUNT DETAILS */
+.accounts-container {
+  border-radius: 15px;
+}
+
+.user-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  margin-bottom: 25px;
+}
+
+.user-func {
+  border: 1px solid rgb(228, 255, 228);
+  border-radius: 15px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 3px 10px -10px rgb(0, 0, 1);
+  background: white;
+  padding: 24px;
+}
+
+.user-func h3 {
+  font-size: 17px;
+  font-weight: lighter;
+  color: rgb(0, 78, 0);
+}
+.user-func p {
+  color: forestgreen;
+  font-size: 30px;
+}
+.title {
+  margin-bottom: 50px;
+}
+
+.member-since-content p {
+  font-size: 22px;
+}
+
+/* ACCOUNT SETTINGS */
+
+.account-settings {
+  background: white;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.account-header {
+  background: linear-gradient(to right, #f0fdf4 0%, #fefce8 100%);
+  padding: 24px 24px 2px 24px;
+}
+
+.account-header h3 {
+  color: rgb(8, 83, 8);
+  font-weight: lighter;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.account-header p {
+  color: rgb(75, 75, 75);
+  font-size: 17px;
+}
+
+.account-body {
+  padding: 48px 24px 24px 24px;
+}
+
+.profile-information {
+  border: 1px solid rgb(219, 255, 219);
+  margin-bottom: 22px;
+  border-radius: 15px;
+  padding: 24px;
+}
+
+.profile-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-information {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.account-icon {
+  background-color: rgb(217, 255, 217);
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 12px;
+}
+
+.account-icon img {
+  position: absolute;
+  margin: 7px;
+  width: 25px;
+  height: 25px;
+  filter: brightness(0) saturate(100%) invert(25%) sepia(100%) saturate(370%)
+    hue-rotate(100deg);
+}
+
+.user-information h3 {
+  color: rgb(0, 83, 0);
+  font-weight: lighter;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.user-information p {
+  color: rgb(107, 107, 107);
+  font-size: 14px;
+}
+
+.right-information button {
+  width: max-content;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid rgb(164, 255, 164);
+  font-weight: bold;
+  color: rgb(43, 43, 43);
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+
+.right-information button:hover {
+  background-color: rgb(219, 255, 219);
+}
+
+.user-email-address {
+  display: flex;
+  border: 1px solid rgb(207, 255, 207);
+  background: rgb(225, 255, 225);
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.user-email-address h3 {
+  font-weight: lighter;
+  font-size: 16px;
+  color: rgba(2, 84, 2, 0.821);
+  margin-bottom: 5px;
+}
+
+.user-email-address p:nth-child(2) {
+  color: rgb(20, 20, 20);
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.user-email-address p:nth-child(3) {
+  color: rgb(96, 96, 96);
+  font-size: 14px;
+}
+
+.envelope-svg img {
+  width: 25px;
+  height: 25px;
+  filter: brightness(0) saturate(100%) invert(25%) sepia(100%) saturate(370%)
+    hue-rotate(100deg);
+}
+
+/* FOR MODAL */
+
+/* Background overlay */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal label {
+  display: flex;
+  text-align: start;
+  color: rgb(0, 88, 0);
+}
+
+/* Main box */
+.modal-content {
+  background: #fff;
+  width: 430px;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.2s ease;
+  position: relative;
+}
+
+.modal-content h2 {
+  color: rgb(0, 106, 0);
+  font-size: 17px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+.modal-content form {
+  margin-top: 40px;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 26px;
+  cursor: pointer;
+  color: #777;
+}
+
+/* Titles */
+.subtitle {
+  margin-top: -6px;
+  color: #777;
+  font-size: 15px;
+}
+
+/* Inputs */
+.input-field {
+  width: 100%;
+  padding: 12px 14px;
+  margin-top: 6px;
+  margin-bottom: 15px;
+  border: 2px solid #d6f5d6;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+}
+
+.input-box {
+  display: flex;
+}
+
+.input-box #togglePassword {
+  transform: translate(100);
+  cursor: pointer;
+}
+
+.input-box #toggleCurrent {
+  transform: translate(100);
+  cursor: pointer;
+}
+.input-box #toggleConfirm {
+  transform: translate(100);
+  cursor: pointer;
+}
+
+.input-box #togglePassword:hover {
+  color: rgb(82, 82, 82);
+}
+
+.input-box #toggleCurrent:hover {
+  color: rgb(82, 82, 82);
+}
+.input-box #toggleConfirm:hover {
+  color: rgb(82, 82, 82);
+}
+
+.input-box i {
+  color: rgb(0, 111, 0);
+  position: absolute;
+  margin: 21px;
+  right: 30px;
+}
+
+.input-field:focus {
+  border-color: #4caf50;
+}
+
+/* Buttons container */
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+/* Cancel button */
+.cancel-btn {
+  background: #fff;
+  border: 2px solid #d6f5d6;
+  padding: 9px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.cancel-btn:hover {
+  background-color: rgb(226, 255, 226);
+}
+
+/* Save button */
+.save-btn {
+  background: #009840;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.save-btn:hover {
+  background: #00983fd3;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* RESPONSIVENESS */
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
